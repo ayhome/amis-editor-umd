@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lib": "vue-cli-service build --target lib --name amisEditor --dest lib packages/index.js"
+    "lib": "vue-cli-service build --target lib --name amisEditor --dest docs packages/index.js"
   },
   "dependencies": {
     "amis": "^1.4.1",
