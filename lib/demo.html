@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+<title>amisEditor demo</title>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="./amisEditor.umd.js"></script>
+
+<link rel="stylesheet" href="./amisEditor.css">
+
+
+<div id="app">
+  <amis-editor id="editorName" theme="cxd" className="is-fixed" :preview="isPreview" :isMobile="isMobile" :value="schema"  ></amis-editor>
+</div>
+
+<script>
+</script>
+<script>
+    new Vue({
+      el: '#app',
+      data: function() {
+        return { 
+          isPreview:false,
+          isMobile:false,
+          post: {
+            json: '',
+            amis_page_id: 15,
+          },
+          baseURL: 'https://beauty.tieninc.com/index.php/',
+
+          schema: {},
+        }
+      }
+    })
+  </script>

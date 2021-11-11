@@ -1,0 +1,30 @@
+{
+  "name": "amis_editor",
+  "version": "0.1.1",
+  "private": false,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib --name amisEditor --dest lib packages/index.js"
+  },
+  "dependencies": {
+    "amis": "^1.4.1",
+    "amis-editor": "^3.3.11",
+    "axios": "^0.24.0",
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11",
+    "vuera": "^0.2.7"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "author": {
+    "name": "ayhome",
+    "mail": "ayhome@foxmail.com",
+    "github": "https://github.com/ayhome/amis_editor"
+  }
+}
