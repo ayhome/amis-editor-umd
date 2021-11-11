@@ -1,11 +1,27 @@
-
 <meta charset="utf-8">
 <title>amisEditor demo</title>
-<script src="./amisEditor.umd.js"></script>
 
-<link rel="stylesheet" href="./amisEditor.css">
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
 
+<link rel="stylesheet" href="../lib/amisEditor.css">
+
+
+<div id="app">
+  <amis-editor id="editorName" theme="cxd" className="is-fixed" :preview="isPreview" :isMobile="isMobile" :value="schema"  ></amis-editor>
+</div>
 
 <script>
-console.log(amisEditor)
+</script>
+<script src="../lib/amisEditor.umd.js"></script>
+<script>
+  new Vue({
+    el: '#app',
+    data: function() {
+      return { 
+        isPreview:false,
+        isMobile:false,
+        schema: {},
+      }
+    }
+  })
 </script>
